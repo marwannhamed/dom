@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="file.css" />
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td><input type="number" min="1" value="2" id="item1-quantity" /></td>
+        <td>$10</td>
+        <td>
+          <button onclick="increaseQuantity('item1')">+</button>
+          <button onclick="decreaseQuantity('item1')">-</button>
+          <button onclick="deleteItem(this)">x</button>
+          <button class="like-button" onclick="toggleLike(this)">❤️</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Item 2</td>
+        <td><input type="number" min="1" value="1" id="item2-quantity" /></td>
+        <td>$20</td>
+        <td>
+          <button onclick="increaseQuantity('item2')">+</button>
+          <button onclick="decreaseQuantity('item2')">-</button>
+          <button onclick="deleteItem(this)">x</button>
+          <button class="like-button" onclick="toggleLike(this)">❤️</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Total Price</td>
+        <td></td>
+      </tr>
+    </table>
+    <script src="file.js"></script>
+  </body>
+</html>
